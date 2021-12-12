@@ -1,0 +1,58 @@
+.hackathon_info {
+    /* flex-direction: row; */
+    display: flex;
+    /* position: absolute; */
+    width: 1300px;
+    height: 360px;
+    /* left: 68px;
+    top: 1049px; */
+}
+
+.hackathon_img {
+    /* position: absolute;
+    width: 500px;
+    height: 360px;
+    left: 68px;
+    top: 1446px; */
+    
+}
+
+
+.hackathon_brief{
+
+}
+
+.hackathon_name{
+
+}
+
+.hackathon_sponsor{
+
+}
+
+.hackathon_date{
+
+}
+
+.hackathon_card_arrow {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    left: 0px;
+    top:0px;
+}
+.card_arrow_img {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    left: 0px;
+    top:0px;
+}
+
+.vertical_line{
+
+}
+
+.hackathon_list{
+    
+}

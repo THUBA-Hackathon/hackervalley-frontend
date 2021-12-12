@@ -1,25 +1,43 @@
-import logo from './logo.svg';
 import './App.css';
+import Hackathon from './component/hackathon/hackathon'
+import HackathonList from './component/hackathon/hackathonList';
+import React from "react";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+let list = [
+  {
+      url: '../../assets/example.png',
+      name: '2021 DFINITY x IAF 中国首次黑客松',
+      sponsor: 'DFINITY x IAF',
+      startdate: '2020-03-01',
+      enddate: '2021-05-24'
+  },
+  {
+      url: '../../assets/example.png',
+      name: '2021 DFINITY x IAF 中国首次黑客松',
+      sponsor: 'DFINITY x IAF',
+      startdate: '2020-03-01',
+      enddate: '2021-05-24'
+  },
+  {
+      url: '../../assets/example.png',
+      name: '2021 DFINITY x IAF 中国首次黑客松',
+      sponsor: 'DFINITY x IAF',
+      startdate: '2020-03-01',
+      enddate: '2021-05-24'
+  },
+]
+class App extends React.Component {
+  render() {
+    return (
+      <div className="App">
+        <header className="App-header">
+          
+        </header>
+        <Hackathon />
+      </div>
+    );
+  };
+  
 }
 
 export default App;

@@ -1,3 +1,7 @@
+# How to run by hhx
+Run `npm install` first to install packages, then run `npm start` to compile and run the project.
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
