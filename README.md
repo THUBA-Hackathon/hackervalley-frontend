@@ -1,5 +1,22 @@
 # How to run by hhx
+
 Run `npm install` first to install packages, then run `npm start` to compile and run the project.
+
+# Project Introduction
+
+Hacker Valley project aims at providing a platform for developers to team up for hackathons. Frontend of the project contains 3 main moduless, hackathon display , projects display and team module. 
+
+## Hackathon Display
+
+This module displays hackathon infos such as hackathon theme, sponsor, start time and endtime. User can see details of interested hackathon, which include detailed description, poster, requirements of project and so on.
+
+## Projects Display
+
+This module displays awesome projects finished by geeks. User can see the hackathon that the project participated in and the brief introduction to the project.
+
+## Team
+
+This module helps developers find teammates they prefer. User can see teams for now. They can also create a new team if they want. Team members can see the email of the captain.
 
 
 # Getting Started with Create React App
