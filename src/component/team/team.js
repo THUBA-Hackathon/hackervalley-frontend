@@ -1,18 +1,23 @@
-// 队伍信息展示
+// 队伍信息展示卡片
 import React from "react";
 import './team.css';
+import Captain from "./captain"
+import TechStack from "./techstack"
 
 
-// 传入的参数包括黑客松的海报图片url,赛事介绍详细内容words
-class HackathonDetails extends React.Component{
+
+// 传入的参数包括项目简介，队伍名称，队长昵称，队长email,技术栈列表
+class TeamCard extends React.Component{
     render() {
 		return (
-            <div className="hackathon_details">
-                <div className="hackathon_poster_img"><img src={this.props.url} alt=""/></div>
-                <div className="hackathon_details_words">{this.props.words}</div>
+            <div className="team_card">
+                <div className="project_intro">{this.props.intro}</div>
+                <Captain team_name={this.props.team_name} cap_name={this.props.cap_name} email={this.props.email}/>
+                <TechStack techList={this.props.techList}/>
+                <div className="join_btn">我要报名</div>
             </div>
 		);
 	}
 }
 
-export default HackathonDetails;
+export default TeamCard;

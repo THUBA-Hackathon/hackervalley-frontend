@@ -11,11 +11,9 @@ class PageDetails extends React.Component{
 		return (
             <div>
                 <Nav />
-                <div className="details_btn">赛事详情</div>
-                <div className="join_btn">我要参赛</div>
                 <div className="details_line"></div>
-                <div className="btn_line"></div>
-                <HackathonDetails url={this.props.url} words={this.props.words}/>
+                <img className="hackathon_poster_img" src={this.props.url} alt=""/>
+                <HackathonDetails url={this.props.url} words={this.props.words} startdate={this.props.startdate} enddate={this.props.enddate}/>
             </div>
 
 		);

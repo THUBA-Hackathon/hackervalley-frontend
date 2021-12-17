@@ -194,7 +194,7 @@
 
 .hackathon_poster_img {
     position: absolute;
-    width: 1480px;
+    width: 1465px;
     height: 463px;
     left: 0px;
     top: 141px;
@@ -202,8 +202,8 @@
 
 .hackathon_details_words {
     position:absolute;
-    left: 110px;
-    top: 724px;
+    left: 124px;
+    top: 50px;
     font-family: DQHT;
     font-style: normal;
     font-weight: normal;
@@ -256,25 +256,15 @@
 
 .details_line {
     position: absolute;
-    width: 1437px;
+    width: 1465px;
     height: 0px;
     left: -6px;
     top: 659px;
 
     /* Grey/Gray/1 */
 
-    border: 1px solid #E3E1E3;
+    border: 3px solid #E3E1E3;
 
-}
-
-.btn_line {
-    position: absolute;
-    width: 84px;
-    height: 0px;
-    left: 143px;
-    top: 659px;
-
-    border: 5px solid #06E1FF;
 }
 
 .details_words {
@@ -285,4 +275,43 @@
 
 .add_button {
     cursor: pointer;
+}
+
+.tabs {
+    position: absolute;
+    width: 1320px;
+    height: 30px;
+    left: 0px;
+    top: 623px;
+}
+
+.w-tabs-bar {
+    position: absolute;
+    left:127px;
+}
+
+.hackathon_date {
+    position: absolute;
+    width: 476px;
+    height: 25px;
+    left: 0px;
+    top: 50px;
+
+    font-family: Helvetica;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 25px;
+    /* identical to box height, or 104% */
+
+
+    color: #06E1FF;
+}
+
+.hackathon_words {
+    position: absolute;
+    left: 0px;
+    top: 102px;
+    width: 1320px;
+    white-space: pre-wrap;
 }

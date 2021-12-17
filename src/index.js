@@ -10,16 +10,48 @@ import {
   Route
 } from "react-router-dom"
 import PageDetails from './component/hackathon/pageDetails';
-import NewsList from './component/hackathon/tabsTest';
+import TeamCard from './component/team/team';
+import PageTeam from './component/team/pageTeam';
 
+let list = [
+  {
+      intro: "一个Web 3.0下的社区项目",
+      team_name: 'NFit',
+      cap_name: '马克',
+      email: '2568198278@qq.com',
+      techList: ["Rust", "Mokoto", "数据结构", "前端设计"],
+  },
+  {
+      intro: "一个Web 3.0下的社区项目",
+      team_name: 'NFit',
+      cap_name: '马克',
+      email: '2568198278@qq.com',
+      techList: ["Rust", "Mokoto", "数据结构", "前端设计"],
+  },
+  {
+      intro: "一个Web 3.0下的社区项目",
+      team_name: 'NFit',
+      cap_name: '马克',
+      email: '2568198278@qq.com',
+      techList: ["Rust", "Mokoto", "数据结构", "前端设计"],
+  },
+]
 
+var intro = `赛事介绍 2021中国数据内容大赛是balabala \r\n 赛事介绍 2021中国数据内容大赛是本周完成事项+输出：\n
+完成CP-ABE在mac系统的支持和实现\n
+完成CP-ABE命令行工具实现\n
+下周工作计划\n
+完成CP-ABE在windows系统的支持\n
+完成demo中CP-ABE的版本更换\n
+是否存在问题及需要的支持：\n
+无`
 const rootElement = document.getElementById("root");
 render(
   <HashRouter>
     <Routes>
       <Route path={"" + "/"} element={<App />}/>
-      <Route path={"" + "/details"} element={<PageDetails url={require("./assets/header_poster.png").default} words="赛事介绍 2021中国数据内容大赛是balabala" />}/>
-      <Route path={"" + "/list"} element= {<NewsList/>}/>
+      <Route path={"" + "/details"} element={<PageDetails url={require("./assets/header_poster.png").default} words={intro} startdate="2021-12-01" enddate="2021-12-17" />}/>
+      <Route path={"" + "/cap"} element={<PageTeam teamList={list}/>}></Route>
     </Routes>
   </HashRouter>,
   rootElement
