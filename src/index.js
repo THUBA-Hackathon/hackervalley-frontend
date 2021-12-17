@@ -12,6 +12,7 @@ import {
 import PageDetails from './component/hackathon/pageDetails';
 import TeamCard from './component/team/team';
 import PageTeam from './component/team/pageTeam';
+import AddTeam from './component/team/newTeam'
 
 let list = [
   {
@@ -52,6 +53,7 @@ render(
       <Route path={"" + "/"} element={<App />}/>
       <Route path={"" + "/details"} element={<PageDetails url={require("./assets/header_poster.png").default} words={intro} startdate="2021-12-01" enddate="2021-12-17" />}/>
       <Route path={"" + "/cap"} element={<PageTeam teamList={list}/>}></Route>
+      <Route path={"" + "/add"} element={<AddTeam />}></Route>
     </Routes>
   </HashRouter>,
   rootElement
