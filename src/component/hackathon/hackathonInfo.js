@@ -11,7 +11,6 @@ class HackathonInfo extends React.Component{
                 <div className="hackathon_img"><img src={this.props.url} alt=""/></div>
                 <HackathonBrief name={this.props.name} sponsor={this.props.sponsor} startdate={this.props.startdate} enddate={this.props.enddate}/>
                 <div className="hackathon_card_arrow"><img className="card_arrow_img" src={require("../../assets/arrow.svg").default} alt=""/></div>
-                
             </div>
 		);
 	}

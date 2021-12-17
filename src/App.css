@@ -33,6 +33,16 @@
   justify-content: space-around;
 }
 
+.nav_logo_img {
+  position: absolute;
+  height: 63px;
+  width: 63px;
+  left: 30px;
+  top: 16px;
+  border-radius: 0px;
+  z-index: 1;
+}
+
 .nav_logo{
   position: absolute;
   width: 158px;
@@ -133,12 +143,11 @@
 }
 .nav_img_mine{
   position: absolute;
-  left: 91.59%;
-  right: 6.74%;
-  top: 2.45%;
-  bottom: 97.14%;
+  left: 1318px;
+  top: 36px;
+  width: 24px;
+  height: 24px;
 
-  background: #24252D;
 }
 .nav_mine{
   position: absolute;

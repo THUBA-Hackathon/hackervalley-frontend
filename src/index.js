@@ -1,14 +1,27 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import { render } from "react-dom";
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import {
+  HashRouter,
+  Routes,
+  Route
+} from "react-router-dom"
+import PageDetails from './component/hackathon/pageDetails';
+import NewsList from './component/hackathon/tabsTest';
+
 
 const rootElement = document.getElementById("root");
-ReactDOM.render(
-  // <React.StrictMode>
-    <App />,
-  // </React.StrictMode>,
+render(
+  <HashRouter>
+    <Routes>
+      <Route path={"" + "/"} element={<App />}/>
+      <Route path={"" + "/details"} element={<PageDetails url={require("./assets/header_poster.png").default} words="赛事介绍 2021中国数据内容大赛是balabala" />}/>
+      <Route path={"" + "/list"} element= {<NewsList/>}/>
+    </Routes>
+  </HashRouter>,
   rootElement
 );
 

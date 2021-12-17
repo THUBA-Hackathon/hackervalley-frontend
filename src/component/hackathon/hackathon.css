@@ -4,8 +4,6 @@
     margin-top:37px;
     width: 1300px;
     height: 360px;
-    /* left: 68px;
-    top: 1049px; */
     background: #FFFFFF;
     border: 1px solid #DEE1E9;
     border-right: 10px solid #0057FE;
@@ -20,11 +18,6 @@
     left:0px;
     top:0px;
     
-}
-
-
-.hackathon_brief{
-
 }
 
 .hackathon_name{
@@ -98,10 +91,6 @@
     height: 763px;
     left: 0px;
     top: 104px;
-}
-
-.swipper {
-
 }
 
 .phase_on {
@@ -200,4 +189,100 @@
     text-transform: capitalize;
 
     color: #0057FE;
+}
+
+
+.hackathon_poster_img {
+    position: absolute;
+    width: 1480px;
+    height: 463px;
+    left: 0px;
+    top: 141px;
+}
+
+.hackathon_details_words {
+    position:absolute;
+    left: 110px;
+    top: 724px;
+    font-family: DQHT;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 25px;
+    line-height: 30px;
+}
+
+.details_btn {
+    position: absolute;
+    width: 98px;
+    height: 30px;
+    left: 127px;
+    top: 623px;
+
+    font-family: DQHT;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 20px;
+    line-height: 30px;
+    /* identical to box height, or 150% */
+
+    display: flex;
+    align-items: center;
+    text-align: right;
+
+    color: #06E1FF;
+}
+
+.join_btn {
+    position: absolute;
+    width: 80px;
+    height: 30px;
+    left: 310px;
+    top: 623px;
+
+    font-family: DQHT;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 20px;
+    line-height: 30px;
+    /* identical to box height, or 150% */
+
+    display: flex;
+    align-items: center;
+    text-align: right;
+
+    color: #999999;
+
+}
+
+.details_line {
+    position: absolute;
+    width: 1437px;
+    height: 0px;
+    left: -6px;
+    top: 659px;
+
+    /* Grey/Gray/1 */
+
+    border: 1px solid #E3E1E3;
+
+}
+
+.btn_line {
+    position: absolute;
+    width: 84px;
+    height: 0px;
+    left: 143px;
+    top: 659px;
+
+    border: 5px solid #06E1FF;
+}
+
+.details_words {
+    position: absolute;
+    left: 120px;
+    top:724px;
+}
+
+.add_button {
+    cursor: pointer;
 }

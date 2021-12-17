@@ -5,7 +5,7 @@ import HackathonList from "./hackathonList";
 import Nav from "../nav"
 import Swipper from "./swipper"
 import Phase from "./phase"
-import AddHackathon from "./addHackathon"
+import AddDialog from "./dialogAddHackathon"
 
 let list = [
     {
@@ -53,9 +53,8 @@ class Hackathon extends React.Component{
                 <Nav />
                 <Swipper />
                 <Phase />
-                <AddHackathon />
+                <AddDialog />
                 <HackathonList hackathonList={list} />
-                
             </div>
         )
 	}

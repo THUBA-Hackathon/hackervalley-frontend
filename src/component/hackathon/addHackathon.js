@@ -2,7 +2,7 @@
 import React from "react";
 import './hackathon.css';
 
-class AddHackathon extends React.Component{    
+class AddHackathon extends React.Component{
     render() {
 		return (
             <div className="addh">
