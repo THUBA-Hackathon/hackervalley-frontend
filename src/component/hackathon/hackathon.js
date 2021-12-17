@@ -3,25 +3,27 @@ import React from "react";
 import './hackathon.css';
 import HackathonList from "./hackathonList";
 import Nav from "../nav"
-import Footer from "../footer"
+import Swipper from "./swipper"
+import Phase from "./phase"
+import AddHackathon from "./addHackathon"
 
 let list = [
     {
-        url: '../../assets/example.png',
+        url: require("../../assets/example-hackathon.png").default,
         name: '2021 DFINITY x IAF 中国首次黑客松',
         sponsor: 'DFINITY x IAF',
         startdate: '2020-03-01',
         enddate: '2021-05-24'
     },
     {
-        url: '../../assets/example.png',
+        url: require("../../assets/example-hackathon.png").default,
         name: '2021 DFINITY x IAF 中国首次黑客松',
         sponsor: 'DFINITY x IAF',
         startdate: '2020-03-01',
         enddate: '2021-05-24'
     },
     {
-        url: '../../assets/example.png',
+        url: require("../../assets/example-hackathon.png").default,
         name: '2021 DFINITY x IAF 中国首次黑客松',
         sponsor: 'DFINITY x IAF',
         startdate: '2020-03-01',
@@ -49,8 +51,11 @@ class Hackathon extends React.Component{
         return(
             <div>
                 <Nav />
+                <Swipper />
+                <Phase />
+                <AddHackathon />
                 <HackathonList hackathonList={list} />
-                <Footer />
+                
             </div>
         )
 	}

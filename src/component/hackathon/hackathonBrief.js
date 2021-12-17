@@ -6,10 +6,10 @@ import './hackathon.css';
 class HackathonBrief extends React.Component{
     render() {
 		return (
-            <div className="hackathon_brief">
+            <div>
                 <div className="hackathon_name">{this.props.name}</div>
-                <div className="hackathon_sponsor">主办方:{this.props.sponsor}</div>
-                <div className="hackathon_date">{this.props.startdate} - {this.props.enddate}</div>
+                <div className="hackathon_sponsor">主办方:{this.props.sponsor}<br />
+                {this.props.startdate} - {this.props.enddate}</div>
             </div>
             
 		);

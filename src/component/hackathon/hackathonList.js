@@ -2,6 +2,7 @@
 import React from "react";
 import './hackathon.css';
 import HackathonInfo from "./hackathonInfo";
+import Footer from "../footer"
 
 // let list = [
 //     {
@@ -45,7 +46,10 @@ class HackathonList extends React.Component{
             // enddate={item.enddate}
         });
         return(
-            <div className="hackathon_list">{dataList}</div>
+            <div className="hackathon_list">
+                {dataList}
+                <Footer />
+            </div>
         )
 	}
 }

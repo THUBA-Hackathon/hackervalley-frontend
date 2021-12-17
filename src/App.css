@@ -1,14 +1,28 @@
 .App {
   text-align: center;
+  position: absolute;
+  left:0px;
+  top:0px;
   /* display: flex; */
 }
 
 .footer{
+  position: relative;
+  width: 315px;
+  height: 26px;
+  left: 209.5px;
+  top: 71px;
+
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+
+  color: #2D2E36;
 
 }
-.footer_words{
 
-}
 .nav{
   position: absolute;
   width: 1437px;
@@ -18,6 +32,7 @@
   display:'flex';
   justify-content: space-around;
 }
+
 .nav_logo{
   position: absolute;
   width: 158px;
