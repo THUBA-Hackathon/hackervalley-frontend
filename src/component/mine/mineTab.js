@@ -6,6 +6,7 @@ import Tab from '@mui/material/Tab';
 import Typography from '@mui/material/Typography';
 import Box from '@mui/material/Box';
 import MessageCenter from './messageCenter';
+import AccountInfo from './accountInfo';
 
 
 function TabPanel(props) {
@@ -68,7 +69,7 @@ export default function MineTabs(props) {
         <MessageCenter applyMessageList={props.applyMessageList}/>
       </TabPanel>
       <TabPanel value={value} index={1}>
-        Item Two
+        <AccountInfo account_name={props.account_name} account_area={props.account_area} account_phone={props.account_phone} account_email={props.account_email} account_role_wanted={props.account_role_wanted}/>
       </TabPanel>
       <TabPanel value={value} index={2}>
         Item Three
