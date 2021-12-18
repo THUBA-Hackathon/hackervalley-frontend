@@ -14,6 +14,8 @@ import TeamCard from './component/team/team';
 import PageTeam from './component/team/pageTeam';
 import AddTeam from './component/team/newTeam';
 import Mine from './component/mine/mine';
+import MineTabs from './component/mine/mineTab';
+import VerticalTabs from './component/mine/mineTab'
 
 
 let list = [
@@ -40,6 +42,30 @@ let list = [
   },
 ]
 
+let list1 = [
+  {
+    applyer_name: "马克",
+    apply_area: '中国',
+    apply_phone: '19829289829',
+    apply_email: '2568198278@qq.com',
+    apply_role_wanted: "前端设计",
+  },
+  {
+    applyer_name: "马克",
+    apply_area: '中国',
+    apply_phone: '19829289829',
+    apply_email: '2568198278@qq.com',
+    apply_role_wanted: "前端设计",
+  },
+  {
+    applyer_name: "马克",
+    apply_area: '中国',
+    apply_phone: '19829289829',
+    apply_email: '2568198278@qq.com',
+    apply_role_wanted: "前端设计",
+  },
+]
+
 var intro = `赛事介绍 2021中国数据内容大赛是balabala \r\n 赛事介绍 2021中国数据内容大赛是本周完成事项+输出：\n
 完成CP-ABE在mac系统的支持和实现\n
 完成CP-ABE命令行工具实现\n
@@ -48,6 +74,7 @@ var intro = `赛事介绍 2021中国数据内容大赛是balabala \r\n 赛事介
 完成demo中CP-ABE的版本更换\n
 是否存在问题及需要的支持：\n
 无`
+
 const rootElement = document.getElementById("root");
 render(
   <HashRouter>
@@ -56,7 +83,7 @@ render(
       <Route path={"" + "/details"} element={<PageDetails url={require("./assets/header_poster.png").default} words={intro} startdate="2021-12-01" enddate="2021-12-17" />}/>
       <Route path={"" + "/cap"} element={<PageTeam teamList={list}/>}></Route>
       <Route path={"" + "/add"} element={<AddTeam />}></Route>
-      <Route path={"" + "/mine"} element={<Mine />}></Route>
+      <Route path={"" + "/mine"} element={<Mine applyMessageList={list1} />}></Route>
     </Routes>
   </HashRouter>,
   rootElement

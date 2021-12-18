@@ -1,68 +1,16 @@
 import React from "react"
-import Tabs from '@mui/material/Tabs';
-import Tab from '@mui/material/Tab';
-import Typography from '@mui/material/Typography';
-import Box from '@mui/material/Box';
-import PropTypes from 'prop-types';
+import Nav from "../nav";
+import MineTabs from "./mineTab";
 
 
-function TabPanel(props) {
-    const { children, value, index, ...other } = props;
-  
-    return (
-      <div
-        role="tabpanel"
-        hidden={value !== index}
-        id={`vertical-tabpanel-${index}`}
-        aria-labelledby={`vertical-tab-${index}`}
-        {...other}
-      >
-        {value === index && (
-          <Box sx={{ p: 3 }}>
-            <Typography>{children}</Typography>
-          </Box>
-        )}
-      </div>
-    );
-}
-TabPanel.propTypes = {
-    children: PropTypes.node,
-    index: PropTypes.number.isRequired,
-    value: PropTypes.number.isRequired,
-};
 class Mine extends React.Component{
-    constructor(props) {
-        super(props)
-        const [value, setValue] = React.useState(0);
-    }
-    a11yProps(index) {
-        return {
-          id: `vertical-tab-${index}`,
-          'aria-controls': `vertical-tabpanel-${index}`,
-        };
-    }
-    handleChange = (event, newValue) => {
-        setValue(newValue);
-    };
+    
     render(){
         return(
             <div className="container">
-                <Box sx={{ borderBottom: 1, borderColor: 'divider' }}>
-                    <Tabs value={value} onChange={handleChange} aria-label="basic tabs example"  orientation="vertical">
-                    <Tab label="Item One" {...a11yProps(0)} />
-                    <Tab label="Item Two" {...a11yProps(1)} />
-                    <Tab label="Item Three" {...a11yProps(2)} />
-                    </Tabs>
-                </Box>
-                <TabPanel value={value} index={0}>
-                    Item One
-                </TabPanel>
-                <TabPanel value={value} index={1}>
-                    Item Two
-                </TabPanel>
-                <TabPanel value={value} index={2}>
-                    Item Three
-                </TabPanel>
+                <Nav />
+                <MineTabs applyMessageList={this.props.applyMessageList}/>
+               
             </div>
         )
     }
