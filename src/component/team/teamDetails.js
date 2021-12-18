@@ -11,16 +11,17 @@ class TeamDetails extends React.Component{
         let memberList = this.props.data.people_list.map((item, index) => {
             return (<People key={index} {...item} />)
         });
-		return (
+        return (
             <div className="team_details">
                 <div className="details_team_name">{this.props.data.team_name}</div>
                 <Captain team_name={this.props.data.team_name} cap_name={this.props.data.cap_name} email={this.props.data.email}/>
                 <div className="details_project_intro">{this.props.data.project_intro}</div>
-                <div className="details_project_link">{this.props.data.project_link}</div>
+                {/*<div className="details_project_link">{this.props.data.project_link}</div>*/}
+
                 {memberList}
             </div>
-		);
-	}
+        );
+    }
 }
 
 export default TeamDetails;
