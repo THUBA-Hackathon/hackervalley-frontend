@@ -1,5 +1,6 @@
 import { title } from "process";
 import React from "react"
+import './mine.css'
 
 import Button from '@mui/material/Button';
 import TextField from '@mui/material/TextField';
@@ -16,8 +17,8 @@ class ApplyMessage extends React.Component{
         return(
             <div className="apply_message">
                 <div className="message">Hi~{this.props.applyer_name} 申请加入你的团队</div>
-                <div className="appler_table">
-                    
+                <div>
+                    <div className="applyer_name">
                     <TextField
                         margin="dense"
                         id="name"
@@ -26,6 +27,8 @@ class ApplyMessage extends React.Component{
                         variant="outlined"
                         defaultValue={this.props.applyer_name}
                     />
+                    </div>
+                    <div className="applyer_area">
                     <TextField
                         margin="dense"
                         id="area"
@@ -34,6 +37,8 @@ class ApplyMessage extends React.Component{
                         variant="outlined"
                         defaultValue={this.props.apply_area}
                     />
+                    </div>
+                    <div className="applyer_phone">
                     <TextField
                         margin="dense"
                         id="phone"
@@ -42,6 +47,8 @@ class ApplyMessage extends React.Component{
                         variant="outlined"
                         defaultValue={this.props.apply_phone}
                     />
+                    </div>
+                    <div className="applyer_email">
                     <TextField
                         margin="dense"
                         id="email"
@@ -51,6 +58,8 @@ class ApplyMessage extends React.Component{
                         type="email"
                         defaultValue={this.props.apply_email}
                     />
+                    </div>
+                    <div className="applyer_role">
                     <TextField
                         margin="dense"
                         id="role_wanted"
@@ -60,9 +69,14 @@ class ApplyMessage extends React.Component{
                         multiline
                         defaultValue={this.props.apply_role_wanted}
                     />
+                    </div>
                     
-                    <Button onClick={this.handleReject.bind(this)}>拒绝</Button>
-                    <Button onClick={this.handleAccept.bind(this)}>接受</Button>
+                    <div className="reject_btn">
+                        <Button onClick={this.handleReject.bind(this)}>拒绝</Button>
+                    </div>
+                    <div className="accept_btn">
+                        <Button onClick={this.handleAccept.bind(this)}>接受</Button>
+                    </div>
                 </div>
                
             </div>

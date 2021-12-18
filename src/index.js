@@ -24,21 +24,21 @@ let list = [
       team_name: 'NFit',
       cap_name: '马克',
       email: '2568198278@qq.com',
-      techList: ["Rust", "Mokoto", "数据结构", "前端设计"],
+      techList: [{tech:"Rust"}, {tech:"Mokoto"}, {tech:"数据结构"}],
   },
   {
       intro: "一个Web 3.0下的社区项目",
       team_name: 'NFit',
       cap_name: '马克',
       email: '2568198278@qq.com',
-      techList: ["Rust", "Mokoto", "数据结构", "前端设计"],
+      techList: [{tech:"Rust"}, {tech:"Mokoto"}, {tech:"数据结构"}],
   },
   {
       intro: "一个Web 3.0下的社区项目",
       team_name: 'NFit',
       cap_name: '马克',
       email: '2568198278@qq.com',
-      techList: ["Rust", "Mokoto", "数据结构", "前端设计"],
+      techList: [{tech:"Rust"}, {tech:"Mokoto"}, {tech:"数据结构"}],
   },
 ]
 
@@ -65,6 +65,14 @@ let list1 = [
     apply_role_wanted: "前端设计",
   },
 ]
+var data1 = {
+  account_name: "马克",
+  account_area: "中国",
+  account_phone: "19829289829",
+  account_email: "2568198278@qq.com",
+  account_role_wanted : "前端设计"
+
+}
 
 var intro = `赛事介绍 2021中国数据内容大赛是balabala \r\n 赛事介绍 2021中国数据内容大赛是本周完成事项+输出：\n
 完成CP-ABE在mac系统的支持和实现\n
@@ -83,7 +91,7 @@ render(
       <Route path={"" + "/details"} element={<PageDetails url={require("./assets/header_poster.png").default} words={intro} startdate="2021-12-01" enddate="2021-12-17" />}/>
       <Route path={"" + "/cap"} element={<PageTeam teamList={list}/>}></Route>
       <Route path={"" + "/add"} element={<AddTeam />}></Route>
-      <Route path={"" + "/mine"} element={<Mine applyMessageList={list1} />}></Route>
+      <Route path={"" + "/mine"} element={<Mine applyMessageList={list1} accountInfoData={data1} teamList={list}/>}></Route>
         <Route path={"" + "/teamDetails"} element={<Mine applyMessageList={list1} />}></Route>
     </Routes>
   </HashRouter>,
