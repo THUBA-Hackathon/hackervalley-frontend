@@ -2,7 +2,7 @@
     position: absolute;
     width: 90px;
     height: 90px;
-    left: 55px;
+    left: 80px;
     top: 148px;
 }
 
@@ -12,4 +12,132 @@
     height: 60.32px;
     left: 944px;
     top: 193px;
+}
+
+.team_name{
+    position: relative;
+    width: 284px;
+    height: 24px;
+    left: 190px;
+    margin-top: 60px;
+    font-family: Helvetica;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 24px;
+    /* identical to box height, or 100% */
+    /* Neutral / 900 */
+
+    color: #0E1735;
+    /* or 146% */
+
+
+    color: #0057FE;
+}
+
+.cap_name{
+    position: relative;
+    width: 346px;
+    height: 56px;
+    left: 190px;
+    margin-top: 20px;
+    font-family: Helvetica;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 28px;
+    /* or 140% */
+    color: #666666;
+
+}
+
+.cap_email{
+    position: relative;
+    width: 346px;
+    height: 56px;
+    left: 190px;
+    margin-top: 0px;
+    font-family: Helvetica;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 28px;
+    /* or 140% */
+    color: #666666;
+
+}
+
+.team_card{
+    position: relative;
+    width: 1208px;
+    height: 300px;
+    left: 115px;
+    margin-top:10px;
+    /*background: rgba(0, 87, 254, 0.08);*/
+}
+
+/*.project_intro1{*/
+/*    text-align: center;*/
+/*    font-family: Helvetica;*/
+/*    font-style: normal;*/
+/*    font-weight: bold;*/
+/*    font-size: 24px;*/
+/*    line-height: 35px;*/
+/*    !* or 146% *!*/
+
+/*    color: #0057FE;*/
+/*}*/
+
+.project_intro{
+    position: relative;
+    width: 1208px;
+    height: 81px;
+    left: 50px;
+    margin-top: 40px;
+    background: rgba(0, 87, 254, 0.08);
+    text-align: center;
+    font-family: Helvetica;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 35px;
+    color: #0057FE;
+}
+
+.tech_stack{
+    position: relative;
+    width: 500px;
+    height: 24px;
+    left: 100px;
+    margin-top: 0px;
+    font-family: Helvetica;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 24px;
+    /* identical to box height, or 120% */
+    color: #000000;
+}
+
+.one_tech{
+    position: relative;
+    float: right;
+    margin-left: 20px;
+    right: 20px;
+    top: 0px;
+    bottom: 20px;
+
+    background: rgba(187, 196, 253, 0.2);
+    border: 1px solid #0057FE;
+    border-radius: 29.5px;
+
+    font-family: Helvetica;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 22px;
+    /* identical to box height, or 110% */
+
+
+    color: #0057FE;
 }
