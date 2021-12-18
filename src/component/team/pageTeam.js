@@ -9,7 +9,8 @@ import AddProjectDialog from "./dialogAddProject";
 class PageTeam extends React.Component{
     render() {
         let dataList = this.props.teamList.map((item, index) => {
-            return (<TeamCard key={index} {...item} />);
+            //console.log(dataList)
+            return (<TeamCard key={index} {...item} />)
         })
 		return (
             <div className="page_team">

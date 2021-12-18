@@ -84,6 +84,7 @@ render(
       <Route path={"" + "/cap"} element={<PageTeam teamList={list}/>}></Route>
       <Route path={"" + "/add"} element={<AddTeam />}></Route>
       <Route path={"" + "/mine"} element={<Mine applyMessageList={list1} />}></Route>
+        <Route path={"" + "/teamDetails"} element={<Mine applyMessageList={list1} />}></Route>
     </Routes>
   </HashRouter>,
   rootElement
