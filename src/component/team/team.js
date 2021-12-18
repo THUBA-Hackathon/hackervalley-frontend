@@ -3,7 +3,6 @@ import React from "react";
 import './team.css';
 import Captain from "./captain"
 import TechStack from "./techstack"
-import JoinTeamDialog from "./dialogJoinTeam";
 
 
 
@@ -15,7 +14,7 @@ class TeamCard extends React.Component{
                 <div className="project_intro">{this.props.intro}</div>
                 <Captain team_name={this.props.team_name} cap_name={this.props.cap_name} email={this.props.email}/>
                 <TechStack techList={this.props.techList}/>
-                <JoinTeamDialog />
+                
             </div>
 		);
 	}

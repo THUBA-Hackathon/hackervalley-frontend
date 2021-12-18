@@ -75,6 +75,14 @@ var intro = `赛事介绍 2021中国数据内容大赛是balabala \r\n 赛事介
 是否存在问题及需要的支持：\n
 无`
 
+var data1 = {
+  account_name: "马克",
+  account_area: "中国",
+  account_phone: "19829289829",
+  account_email: "2568198278@qq.com",
+  account_role_wanted : "前端设计"
+
+}
 const rootElement = document.getElementById("root");
 render(
   <HashRouter>
@@ -83,7 +91,7 @@ render(
       <Route path={"" + "/details"} element={<PageDetails url={require("./assets/header_poster.png").default} words={intro} startdate="2021-12-01" enddate="2021-12-17" />}/>
       <Route path={"" + "/cap"} element={<PageTeam teamList={list}/>}></Route>
       <Route path={"" + "/add"} element={<AddTeam />}></Route>
-      <Route path={"" + "/mine"} element={<Mine applyMessageList={list1} />}></Route>
+      <Route path={"" + "/mine"} element={<Mine applyMessageList={list1} accountInfoData={data1} teamList={list}/>}></Route>
     </Routes>
   </HashRouter>,
   rootElement
