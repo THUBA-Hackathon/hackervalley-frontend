@@ -17,8 +17,8 @@ let list = [
     },
     {
         url: require("../../assets/example-hackathon.png").default,
-        name: '2021 DFINITY x IAF 中国首次黑客松',
-        sponsor: 'DFINITY x IAF',
+        name: '数据驱动与创意呈现——发现数据化叙事的更多价值',
+        sponsor: '数可视',
         startdate: '2020-03-01',
         enddate: '2021-05-24'
     },

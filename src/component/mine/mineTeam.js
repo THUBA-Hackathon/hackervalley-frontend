@@ -3,14 +3,16 @@ import TeamCard from '../team/team'
 import './mine.css';
 
 
+
 class MineTeam extends React.Component{
     render(){
-        let teamList = this.props.teamList.map((item, index) => {
-            return (<TeamCard key={index} {...item} />)
-        });
+        // let teamList = this.props.teamList.map((item, index) => {
+        //     return (<TeamCard key={index} {...item} />)
+        // });
         return(
             <div className="mine_team">
-               {teamList}
+               {/* {teamList} */}
+               <img src={require("../../assets/team_example.png").default} alt = ""/>
             </div>
         )
     }

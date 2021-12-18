@@ -4,6 +4,7 @@ import './team.css';
 import Captain from "./captain"
 import TechStack from "./techstack"
 import { createBrowserHistory } from 'history'
+import JoinTeamDialog from './dialogJoinTeam'
 const history = createBrowserHistory()
 
 
@@ -16,10 +17,15 @@ class TeamCard extends React.Component{
             window.location.reload()
         })
 		return (
-            <div className="team_card" onClick={handleOnClick}>
-                <div className="project_intro">{this.props.intro}</div>
+            <div className="team_card" >
+                <div className="project_intro" onClick={handleOnClick}>
+                    <div className="intro_font">
+                        {this.props.intro}
+                    </div>
+                </div>
                 <Captain team_name={this.props.team_name} cap_name={this.props.cap_name} email={this.props.email}/>
                 <TechStack techList={this.props.techList}/>
+                <JoinTeamDialog />
             </div>
 		);
 	}

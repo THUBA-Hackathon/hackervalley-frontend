@@ -10,15 +10,9 @@ import {
   Route
 } from "react-router-dom"
 import PageDetails from './component/hackathon/pageDetails';
-import TeamCard from './component/team/team';
 import PageTeam from './component/team/pageTeam';
 import AddTeam from './component/team/newTeam';
 import Mine from './component/mine/mine';
-import TeamDetails from "./component/team/teamDetails";
-import MineTabs from './component/mine/mineTab';
-import VerticalTabs from './component/mine/mineTab'
-import TeamDetails from './component/team/teamDetails';
-
 
 let list = [
   {
@@ -76,14 +70,10 @@ let data1 = {
 
 }
 
-var intro = `赛事介绍 2021中国数据内容大赛是balabala \r\n 赛事介绍 2021中国数据内容大赛是本周完成事项+输出：\n
-完成CP-ABE在mac系统的支持和实现\n
-完成CP-ABE命令行工具实现\n
-下周工作计划\n
-完成CP-ABE在windows系统的支持\n
-完成demo中CP-ABE的版本更换\n
-是否存在问题及需要的支持：\n
-无`
+var intro = `赛事介绍 \n
+项目报名指南：https://www.matataki.io/p/10622 \n
+自11月15日起，DFINITY × IAF 首次中国黑客松正式启动报名。
+\n为了服务好每一位参加黑客松的开发者，我们专门组建了一支20多人的强有力的ICP核心开发者支持团队，给予开发者全方位、全天候的技术指导。`
 
 
 let people = [

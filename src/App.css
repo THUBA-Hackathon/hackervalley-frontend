@@ -67,6 +67,8 @@
   left: 351px;
   top: 37px;
 
+  cursor: pointer;
+
   font-family: DQHT;
   font-style: normal;
   font-weight: 900;
@@ -155,6 +157,8 @@
   left: 94.44%;
   right: 0.95%;
   top: 37px;
+
+  cursor: pointer;
 
   font-family: DQHT;
   font-style: normal;

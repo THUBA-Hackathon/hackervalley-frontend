@@ -130,3 +130,17 @@
     /* Brand1-6/常规 */
 
 }
+
+.mine_team {
+    position: absolute;
+    width: 302px;
+    height: 36px;
+    left: 42px;
+    top: 23px;
+}
+
+.mine_team {
+    position:absolute;
+    left: 200px;
+    top:51px;
+}
