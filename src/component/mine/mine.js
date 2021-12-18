@@ -9,7 +9,7 @@ class Mine extends React.Component{
         return(
             <div className="container">
                 <Nav />
-                <MineTabs applyMessageList={this.props.applyMessageList}/>
+                <MineTabs applyMessageList={this.props.applyMessageList} accountInfoData={this.props.accountInfoData} teamList={this.props.teamList}/>
                
             </div>
         )

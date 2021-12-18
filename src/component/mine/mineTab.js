@@ -7,8 +7,9 @@ import Typography from '@mui/material/Typography';
 import Box from '@mui/material/Box';
 import MessageCenter from './messageCenter';
 import AccountInfo from './accountInfo';
+import MineTeam from './mineTeam';
 
-
+// 我的 页面， 需要传入申请加入队伍信息列表applyMesssageList, 用户信息accountInfoData, 用户所在的队伍列表teamList
 function TabPanel(props) {
   const { children, value, index, ...other } = props;
 
@@ -48,6 +49,7 @@ export default function MineTabs(props) {
   const handleChange = (event, newValue) => {
     setValue(newValue);
   };
+  
 
   return (
     <Box
@@ -69,10 +71,10 @@ export default function MineTabs(props) {
         <MessageCenter applyMessageList={props.applyMessageList}/>
       </TabPanel>
       <TabPanel value={value} index={1}>
-        <AccountInfo account_name={props.account_name} account_area={props.account_area} account_phone={props.account_phone} account_email={props.account_email} account_role_wanted={props.account_role_wanted}/>
+        <AccountInfo accountInfoData={props.accountInfoData}/>
       </TabPanel>
       <TabPanel value={value} index={2}>
-        Item Three
+        <MineTeam teamList={props.teamList}/>
       </TabPanel>
     </Box>
   );

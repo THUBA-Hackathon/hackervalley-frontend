@@ -3,14 +3,9 @@ import * as React from 'react';
 import Button from '@mui/material/Button';
 import TextField from '@mui/material/TextField';
 import './mine.css'
-import Dialog from '@mui/material/Dialog';
-import DialogActions from '@mui/material/DialogActions';
-import DialogContent from '@mui/material/DialogContent';
-import DialogContentText from '@mui/material/DialogContentText';
-import DialogTitle from '@mui/material/DialogTitle';
 
 // 需要传入 用户名称 用户国家 手机 邮箱 希望担任的角色
-export default function AccountInfo() {
+export default function AccountInfo(props) {
 
   const handleSubmit = () => {
     
@@ -22,15 +17,14 @@ export default function AccountInfo() {
 
   return (
     <div>
-        <Dialog >
-            <DialogContent>
+        <div>
             <TextField
                 margin="dense"
                 id="name"
                 label="昵称"
                 fullWidth
                 variant="outlined"
-                defaultValue={this.props.account_name}
+                defaultValue={props.accountInfoData.account_name}
             />
             <TextField
                 margin="dense"
@@ -38,7 +32,7 @@ export default function AccountInfo() {
                 label="来自国家/地区"
                 fullWidth
                 variant="outlined"
-                defaultValue={this.props.account_area}
+                defaultValue={props.accountInfoData.account_area}
             />
             <TextField
                 margin="dense"
@@ -46,7 +40,7 @@ export default function AccountInfo() {
                 label="手机"
                 fullWidth
                 variant="outlined"
-                defaultValue={this.props.account_phone}
+                defaultValue={props.accountInfoData.account_phone}
             />
             <TextField
                 margin="dense"
@@ -55,7 +49,7 @@ export default function AccountInfo() {
                 variant="outlined"
                 fullWidth
                 type="email"
-                defaultValue={this.props.account_email}
+                defaultValue={props.accountInfoData.account_email}
             />
             <TextField
                 margin="dense"
@@ -64,14 +58,11 @@ export default function AccountInfo() {
                 fullWidth
                 variant="outlined"
                 multiline
-                defaultValue={this.props.account_role_wanted}
+                defaultValue={props.accountInfoData.account_role_wanted}
             />
-            </DialogContent>
-          <DialogActions>
             {/* <Button onClick={handleClose}>取消</Button> */}
             <Button onClick={handleSubmit}>提交</Button>
-          </DialogActions>
-          </Dialog>
+          </div>
     </div>
   )
 }

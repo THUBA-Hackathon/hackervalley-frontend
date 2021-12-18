@@ -17,7 +17,6 @@ class ApplyMessage extends React.Component{
             <div className="apply_message">
                 <div className="message">Hi~{this.props.applyer_name} 申请加入你的团队</div>
                 <div className="appler_table">
-                    <divContent>
                     
                     <TextField
                         margin="dense"
@@ -62,11 +61,8 @@ class ApplyMessage extends React.Component{
                         defaultValue={this.props.apply_role_wanted}
                     />
                     
-                    </divContent>
-                    <divActions>
                     <Button onClick={this.handleReject.bind(this)}>拒绝</Button>
                     <Button onClick={this.handleAccept.bind(this)}>接受</Button>
-                    </divActions>
                 </div>
                
             </div>

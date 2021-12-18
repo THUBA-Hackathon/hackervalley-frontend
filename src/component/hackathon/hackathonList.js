@@ -32,8 +32,6 @@ import Footer from "../footer"
 class HackathonList extends React.Component{
     constructor(props) {
         super(props);
-    
-        console.log(this.props)
     }
     render() {
         let dataList = this.props.hackathonList.map((item, index) => {
