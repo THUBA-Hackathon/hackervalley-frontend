@@ -8,16 +8,15 @@ import './mine.css'
 export default function AccountInfo(props) {
 
   const handleSubmit = () => {
-    
+    // 提交表单
   };
 
   const handleClose = () => {
-      // 提交表单
+      
   };
 
   return (
     <div>
-        <div>
             <TextField
                 margin="dense"
                 id="name"
@@ -62,7 +61,6 @@ export default function AccountInfo(props) {
             />
             {/* <Button onClick={handleClose}>取消</Button> */}
             <Button onClick={handleSubmit}>提交</Button>
-          </div>
     </div>
   )
 }
