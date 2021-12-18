@@ -12,12 +12,13 @@ class TeamDetails extends React.Component{
             return (<People key={index} {...item} />)
         });
         return (
-            <div className="team_details">
-                <div className="details_team_name">{this.props.data.team_name}</div>
+            <div className="team_card">
+                <div className="team_declaration">{this.props.data.team_declaration}</div>
                 <Captain team_name={this.props.data.team_name} cap_name={this.props.data.cap_name} email={this.props.data.email}/>
+                <div className="divider">项目介绍</div>
                 <div className="details_project_intro">{this.props.data.project_intro}</div>
                 {/*<div className="details_project_link">{this.props.data.project_link}</div>*/}
-
+                <div className="divider1">团队成员</div>
                 {memberList}
             </div>
         );

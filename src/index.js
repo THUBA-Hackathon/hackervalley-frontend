@@ -10,9 +10,14 @@ import {
   Route
 } from "react-router-dom"
 import PageDetails from './component/hackathon/pageDetails';
+import TeamCard from './component/team/team';
 import PageTeam from './component/team/pageTeam';
 import AddTeam from './component/team/newTeam';
 import Mine from './component/mine/mine';
+import TeamDetails from "./component/team/teamDetails";
+import MineTabs from './component/mine/mineTab';
+import VerticalTabs from './component/mine/mineTab'
+
 
 let list = [
   {
@@ -86,13 +91,13 @@ let people = [
         email:'2568198278@qq.com',
     },
 ]
-// let teamDetail= {
-//     project_intro:```现有的黑客松平台主要面向项目方和开发团队，帮助项目方发布黑客松任务，帮助团队提交项目参与评奖。但是，对于个人开发者来说，参与黑客松有太多的门槛：缺少互补可靠的队友，新创意的市场反馈，除了比赛奖金缺乏更多元的激励... Hacker Valley更多侧重开发者方面，从开发者的感受和需求出发，创造最佳的环境供geek们创造和建设项目。并且，整个平台与中心化平台不同，geek们不仅仅是来参与项目比赛，更多也参与了平台的人才资源库建设、使用意见反馈甚至完成平台提供的优化任务，这些都能在平台上获取奖励。 ```
-//     , team_name: "Hacker Valley",
-//     cap_name:"Mark",
-//     email:"2568198278@qq.com",
-//     people_list:people
-// }
+let teamDetail= {
+    team_declaration: 'Hacker Valley，在交流中，实现创意；在实践中，进行创意',
+    project_intro:'现有的黑客松平台主要面向项目方和开发团队，帮助项目方发布黑客松任务，帮助团队提交项目参与评奖。但是，对于个人开发者来说，参与黑客松有太多的门槛：缺少互补可靠的队友，新创意的市场反馈，除了比赛奖金缺乏更多元的激励... Hacker Valley更多侧重开发者方面，从开发者的感受和需求出发，创造最佳的环境供geek们创造和建设项目。并且，整个平台与中心化平台不同，geek们不仅仅是来参与项目比赛，更多也参与了平台的人才资源库建设、使用意见反馈甚至完成平台提供的优化任务，这些都能在平台上获取奖励。', team_name: "Hacker Valley",
+    cap_name:"Mark",
+    email:"2568198278@qq.com",
+    people_list:people
+}
 
 const rootElement = document.getElementById("root");
 render(
@@ -103,8 +108,7 @@ render(
       <Route path={"" + "/cap"} element={<PageTeam teamList={list}/>}></Route>
       <Route path={"" + "/add"} element={<AddTeam />}></Route>
       <Route path={"" + "/mine"} element={<Mine applyMessageList={list1} accountInfoData={data1} teamList={list}/>}></Route>
-
-      {/* <Route path={"" + "/teamDetails"} element={<TeamDetails data={teamdetail} />}></Route> */}
+       <Route path={"" + "/teamDetails"} element={<TeamDetails data = {teamDetail}/>}></Route>
     </Routes>
   </HashRouter>,
   rootElement
