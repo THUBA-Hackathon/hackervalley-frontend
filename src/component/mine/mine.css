@@ -10,10 +10,10 @@
 }
 
 .apply_message {
-    position: relative;
-    left: 357px;
+    position: absolute;
+    margin-left: 300px;
     margin-top: 60px;
-    width: 820px;
+    width: 800px;
     height: 476px;
 
     /* $white */
@@ -25,10 +25,10 @@
 }
 
 .message {
-    position: absolute;
+    position: relative;
     width: 302px;
     height: 36px;
-    left: 42px;
+    margin-left: 42px;
     top: 23px;
 
     font-family: DQHT Helvetica;
@@ -43,14 +43,14 @@
 
 }
 
-.applyer_name {   
+.applyer_name {
 
     position: absolute;
     width: 356px;
     height: 32px;
     left: 25px;
     top:129px;
-/* 
+/*
     background: #F7FAFC; */
     border-radius: 2px;
 }

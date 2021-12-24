@@ -15,6 +15,10 @@ class ApplyMessage extends React.Component{
     }
     render(){
         return(
+            // <div className="apply_message">
+            //     nihao
+            // </div>
+
             <div className="apply_message">
                 <div className="message">Hi~{this.props.applyer_name} 申请加入你的团队</div>
                 <div>
@@ -70,7 +74,7 @@ class ApplyMessage extends React.Component{
                         defaultValue={this.props.apply_role_wanted}
                     />
                     </div>
-                    
+
                     <div className="reject_btn">
                         <Button onClick={this.handleReject.bind(this)}>拒绝</Button>
                     </div>
@@ -78,10 +82,11 @@ class ApplyMessage extends React.Component{
                         <Button onClick={this.handleAccept.bind(this)}>接受</Button>
                     </div>
                 </div>
-               
+
             </div>
         )
+
     }
 }
-  
+
 export default ApplyMessage;
