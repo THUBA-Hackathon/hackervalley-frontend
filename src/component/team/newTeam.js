@@ -8,7 +8,7 @@ class AddTeam extends React.Component{
     render() {
 		return (
             <div className="team_card">
-                <div className="project_intro">
+                <div className="project_intro_btn">
                     <div className="intro_font">
                         创建团队
                     </div>

@@ -5,13 +5,12 @@
 }
 .message_center {
     position: absolute;
-    left: 0px;
+    left: 300px;
     top: 10px;
 }
 
 .apply_message {
-    position: absolute;
-    margin-left: 300px;
+    position: relative;
     margin-top: 60px;
     width: 800px;
     height: 476px;

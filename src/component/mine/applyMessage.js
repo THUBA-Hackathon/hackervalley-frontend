@@ -15,10 +15,6 @@ class ApplyMessage extends React.Component{
     }
     render(){
         return(
-            // <div className="apply_message">
-            //     nihao
-            // </div>
-
             <div className="apply_message">
                 <div className="message">Hi~{this.props.applyer_name} 申请加入你的团队</div>
                 <div>

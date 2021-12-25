@@ -225,6 +225,7 @@
     height: 30px;
     left: 127px;
     top: 623px;
+    cursor: pointer;
 
     font-family: DQHT;
     font-style: normal;
@@ -246,6 +247,7 @@
     height: 30px;
     left: 310px;
     top: 623px;
+    cursor: pointer;
 
     font-family: DQHT;
     font-style: normal;

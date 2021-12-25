@@ -20,6 +20,7 @@
     height: 23px;
     left: 46px;
     top: 19px;
+    cursor: pointer;
 
     font-family: DQHT Helvetica;
     font-style: normal;
@@ -103,25 +104,24 @@
 .team_card{
     position: relative;
     width: 1208px;
-    height: 300px;
+    height: 350px;
     left: 115px;
     margin-top:10px;
     /*background: rgba(0, 87, 254, 0.08);*/
 }
 
-/*.project_intro1{*/
-/*    text-align: center;*/
-/*    font-family: Helvetica;*/
-/*    font-style: normal;*/
-/*    font-weight: bold;*/
-/*    font-size: 24px;*/
-/*    line-height: 35px;*/
-/*    !* or 146% *!*/
-
-/*    color: #0057FE;*/
-/*}*/
-
 .project_intro{
+    text-align: center;
+    font-family: Helvetica;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 35px;
+
+    color: #0057FE;
+}
+
+.project_intro_btn{
     position: relative;
     width: 1208px;
     height:80px;
@@ -130,6 +130,7 @@
     margin-top: 40px;
     text-align: center;
     background: rgba(0, 87, 254, 0.08);
+    cursor: pointer;
     
 }
 
@@ -304,4 +305,31 @@
 
 
     color: #000000;
+}
+.team_details {
+    position: relative;
+    left: 0px;
+    top: 104px;
+}
+.submit_btn{
+    position: relative;
+    width: 109px;
+    height: 60px;
+    left: 50px;
+    margin-top:280px;
+    cursor: pointer;
+
+    font-family: Helvetica;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 25px;
+    line-height: 60px;
+    vertical-align: middle;
+    /* identical to box height, or 240% */
+
+
+    color: #06E1FF;
+
+    border: 1px solid #06E1FF;
+    box-sizing: border-box;
 }

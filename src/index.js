@@ -17,29 +17,86 @@ import Mine from './component/mine/mine';
 import TeamDetails from "./component/team/teamDetails";
 import MineTabs from './component/mine/mineTab';
 import VerticalTabs from './component/mine/mineTab'
+import PageTeamDetails from './component/team/pageTeamDetails';
 
 
+// let list = [
+//   {
+//       intro: "一个Web 3.0下的社区项目",
+//       team_name: 'NFit',
+//       cap_name: '马克',
+//       email: '2568198278@qq.com',
+//       techList: [{tech:"Rust"}, {tech:"Mokoto"}, {tech:"数据结构"}],
+//       showJoin: true,
+//   },
+//   {
+//       intro: "一个Web 3.0下的社区项目",
+//       team_name: 'NFit',
+//       cap_name: '马克',
+//       email: '2568198278@qq.com',
+//       techList: [{tech:"Rust"}, {tech:"Mokoto"}, {tech:"数据结构"}],
+//       showJoin: true,
+//   },
+//   {
+//       intro: "一个Web 3.0下的社区项目",
+//       team_name: 'NFit',
+//       cap_name: '马克',
+//       email: '2568198278@qq.com',
+//       techList: [{tech:"Rust"}, {tech:"Mokoto"}, {tech:"数据结构"}],
+//       showJoin: true,
+//   },
+// ]
 let list = [
   {
       intro: "一个Web 3.0下的社区项目",
       team_name: 'NFit',
       cap_name: '马克',
       email: '2568198278@qq.com',
-      techList: [{tech:"Rust"}, {tech:"Mokoto"}, {tech:"数据结构"}],
+      techList: ["Rust", "Mokoto", "数据结构", "前端设计"],
+      showJoin: false,
   },
+  {
+      intro: "Web 3.0下的学校项目",
+      team_name: 'NFit',
+      cap_name: '皮特',
+      email: '2583026353@qq.com',
+      techList: ["Vue", "Typescript", "数据结构", "网络"],
+      showJoin: true,
+  },
+  {
+      intro: "NFT项目",
+      team_name: 'NFit',
+      cap_name: '华飞',
+      email: '2568198278@qq.com',
+      techList: ["Rust", "Mokoto", "数据结构", "前端设计"],
+      showJoin: true,
+  },
+]
+
+let list2 = [
   {
       intro: "一个Web 3.0下的社区项目",
       team_name: 'NFit',
       cap_name: '马克',
       email: '2568198278@qq.com',
-      techList: [{tech:"Rust"}, {tech:"Mokoto"}, {tech:"数据结构"}],
+      techList: ["Rust", "Mokoto", "数据结构", "前端设计"],
+      showJoin: false,
   },
   {
-      intro: "一个Web 3.0下的社区项目",
+      intro: "Web 3.0下的学校项目",
       team_name: 'NFit',
-      cap_name: '马克',
+      cap_name: '皮特',
+      email: '2583026353@qq.com',
+      techList: ["Vue", "Typescript", "数据结构", "网络"],
+      showJoin: false,
+  },
+  {
+      intro: "NFT项目",
+      team_name: 'NFit',
+      cap_name: '华飞',
       email: '2568198278@qq.com',
-      techList: [{tech:"Rust"}, {tech:"Mokoto"}, {tech:"数据结构"}],
+      techList: ["Rust", "Mokoto", "数据结构", "前端设计"],
+      showJoin: false,
   },
 ]
 
@@ -107,8 +164,8 @@ render(
       <Route path={"" + "/details"} element={<PageDetails url={require("./assets/header_poster.png").default} words={intro} startdate="2021-12-01" enddate="2021-12-17" />}/>
       <Route path={"" + "/cap"} element={<PageTeam teamList={list}/>}></Route>
       <Route path={"" + "/add"} element={<AddTeam />}></Route>
-      <Route path={"" + "/mine"} element={<Mine applyMessageList={list1} accountInfoData={data1} teamList={list}/>}></Route>
-       <Route path={"" + "/teamDetails"} element={<TeamDetails data = {teamDetail}/>}></Route>
+      <Route path={"" + "/mine"} element={<Mine applyMessageList={list1} accountInfoData={data1} teamList={list2}/>}></Route>
+       <Route path={"" + "/teamDetails"} element={<PageTeamDetails data = {teamDetail}/>}></Route>
     </Routes>
   </HashRouter>,
   rootElement

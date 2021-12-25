@@ -13,6 +13,7 @@ let list = [
         cap_name: '马克',
         email: '2568198278@qq.com',
         techList: ["Rust", "Mokoto", "数据结构", "前端设计"],
+        showJoin: true,
     },
     {
         intro: "Web 3.0下的学校项目",
@@ -20,6 +21,7 @@ let list = [
         cap_name: '皮特',
         email: '2583026353@qq.com',
         techList: ["Vue", "Typescript", "数据结构", "网络"],
+        showJoin: true,
     },
     {
         intro: "NFT项目",
@@ -27,6 +29,7 @@ let list = [
         cap_name: '华飞',
         email: '2568198278@qq.com',
         techList: ["Rust", "Mokoto", "数据结构", "前端设计"],
+        showJoin: true,
     },
 ]
 // 传入的参数包括黑客松的海报图片url,赛事介绍详细内容words
