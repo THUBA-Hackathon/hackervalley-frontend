@@ -46,30 +46,52 @@ import PageTeamDetails from './component/team/pageTeamDetails';
 //       showJoin: true,
 //   },
 // ]
+let people = [
+    {
+        people_name: "Mark",
+        email:'2568198278@qq.com',
+    },
+    {
+        people_name: "Werk",
+        email:'2568198278@qq.com',
+    },
+]
 let list = [
   {
+      id: "0",
       intro: "一个Web 3.0下的社区项目",
       team_name: 'NFit',
       cap_name: '马克',
       email: '2568198278@qq.com',
       techList: ["Rust", "Mokoto", "数据结构", "前端设计"],
       showJoin: false,
+      team_declaration: 'Hacker Valley，在交流中，实现创意；在实践中，进行创意',
+      project_intro:'现有的黑客松平台主要面向项目方和开发团队，帮助项目方发布黑客松任务，帮助团队提交项目参与评奖。但是，对于个人开发者来说，参与黑客松有太多的门槛：缺少互补可靠的队友，新创意的市场反馈，除了比赛奖金缺乏更多元的激励... Hacker Valley更多侧重开发者方面，从开发者的感受和需求出发，创造最佳的环境供geek们创造和建设项目。并且，整个平台与中心化平台不同，geek们不仅仅是来参与项目比赛，更多也参与了平台的人才资源库建设、使用意见反馈甚至完成平台提供的优化任务，这些都能在平台上获取奖励。',
+      people_list:people,
   },
   {
+      id: "1",
       intro: "Web 3.0下的学校项目",
       team_name: 'NFit',
       cap_name: '皮特',
       email: '2583026353@qq.com',
       techList: ["Vue", "Typescript", "数据结构", "网络"],
       showJoin: true,
+      team_declaration: 'Hacker Valley，在交流中，实现创意；在实践中，进行创意',
+      project_intro:'现有的黑客松平台主要面向项目方和开发团队，帮助项目方发布黑客松任务，帮助团队提交项目参与评奖。但是，对于个人开发者来说，参与黑客松有太多的门槛：缺少互补可靠的队友，新创意的市场反馈，除了比赛奖金缺乏更多元的激励... Hacker Valley更多侧重开发者方面，从开发者的感受和需求出发，创造最佳的环境供geek们创造和建设项目。并且，整个平台与中心化平台不同，geek们不仅仅是来参与项目比赛，更多也参与了平台的人才资源库建设、使用意见反馈甚至完成平台提供的优化任务，这些都能在平台上获取奖励。',
+      people_list:people,
   },
   {
+      id: "2",
       intro: "NFT项目",
       team_name: 'NFit',
       cap_name: '华飞',
       email: '2568198278@qq.com',
       techList: ["Rust", "Mokoto", "数据结构", "前端设计"],
       showJoin: true,
+      team_declaration: 'Hacker Valley，在交流中，实现创意；在实践中，进行创意',
+      project_intro:'现有的黑客松平台主要面向项目方和开发团队，帮助项目方发布黑客松任务，帮助团队提交项目参与评奖。但是，对于个人开发者来说，参与黑客松有太多的门槛：缺少互补可靠的队友，新创意的市场反馈，除了比赛奖金缺乏更多元的激励... Hacker Valley更多侧重开发者方面，从开发者的感受和需求出发，创造最佳的环境供geek们创造和建设项目。并且，整个平台与中心化平台不同，geek们不仅仅是来参与项目比赛，更多也参与了平台的人才资源库建设、使用意见反馈甚至完成平台提供的优化任务，这些都能在平台上获取奖励。',
+      people_list:people,
   },
 ]
 
@@ -138,16 +160,7 @@ var intro = `赛事介绍 \n
 \n为了服务好每一位参加黑客松的开发者，我们专门组建了一支20多人的强有力的ICP核心开发者支持团队，给予开发者全方位、全天候的技术指导。`
 
 
-let people = [
-    {
-        people_name: "Mark",
-        email:'2568198278@qq.com',
-    },
-    {
-        people_name: "Werk",
-        email:'2568198278@qq.com',
-    },
-]
+
 let teamDetail= {
     team_declaration: 'Hacker Valley，在交流中，实现创意；在实践中，进行创意',
     project_intro:'现有的黑客松平台主要面向项目方和开发团队，帮助项目方发布黑客松任务，帮助团队提交项目参与评奖。但是，对于个人开发者来说，参与黑客松有太多的门槛：缺少互补可靠的队友，新创意的市场反馈，除了比赛奖金缺乏更多元的激励... Hacker Valley更多侧重开发者方面，从开发者的感受和需求出发，创造最佳的环境供geek们创造和建设项目。并且，整个平台与中心化平台不同，geek们不仅仅是来参与项目比赛，更多也参与了平台的人才资源库建设、使用意见反馈甚至完成平台提供的优化任务，这些都能在平台上获取奖励。', team_name: "Hacker Valley",
@@ -165,7 +178,7 @@ render(
       <Route path={"" + "/cap"} element={<PageTeam teamList={list}/>}></Route>
       <Route path={"" + "/add"} element={<AddTeam />}></Route>
       <Route path={"" + "/mine"} element={<Mine applyMessageList={list1} accountInfoData={data1} teamList={list2}/>}></Route>
-       <Route path={"" + "/teamDetails"} element={<PageTeamDetails data = {teamDetail}/>}></Route>
+       <Route path={"" + "/teamDetails/:team_id"} element={<PageTeamDetails data={list}/>}></Route>
     </Routes>
   </HashRouter>,
   rootElement

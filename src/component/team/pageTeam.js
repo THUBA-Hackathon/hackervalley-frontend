@@ -12,7 +12,6 @@ class PageTeam extends React.Component{
         let dataList = this.props.teamList.map((item, index) => {
             return (<div className="team_card_with_join_btn">
                         <TeamCard key={index} {...item} />
-                        
                     </div>)
         })
 		return (

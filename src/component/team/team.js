@@ -1,11 +1,15 @@
 // 队伍信息展示卡片
 import React from "react";
 import './team.css';
+import {Route} from "react-router-dom";
 import Captain from "./captain"
+import PageTeamDetails from "./pageTeamDetails";
 import TechStack from "./techstack"
 import JoinTeamDialog from "./dialogJoinTeam";
 import { createBrowserHistory } from 'history'
+import { Link } from 'react-router-dom';
 const history = createBrowserHistory()
+
 
 
 
@@ -13,7 +17,9 @@ const history = createBrowserHistory()
 class TeamCard extends React.Component{
     render() {
         const handleOnClick = (() => {
-            history.push('/#/teamDetails')
+            console.log(this.props)
+            //this.props.history.push({pathname:"/#/teamDetails",query: { name : 'sunny' }});
+            history.push('/#/teamDetails/'+ parseInt(this.props.id))
             window.location.reload()
         })
 		return (
