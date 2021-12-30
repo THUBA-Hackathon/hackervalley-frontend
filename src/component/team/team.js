@@ -6,6 +6,7 @@ import Captain from "./captain"
 import PageTeamDetails from "./pageTeamDetails";
 import TechStack from "./techstack"
 import JoinTeamDialog from "./dialogJoinTeam";
+import cookie from "react-cookies";
 import { createBrowserHistory } from 'history'
 import { Link } from 'react-router-dom';
 const history = createBrowserHistory()

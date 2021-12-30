@@ -1,11 +1,11 @@
 // 队伍的详情，已经结束黑客松
 import React from 'react';
 import { useLocation,useParams } from "react-router-dom";
-
 import './team.css';
 import Captain from "./captain";
 import People from "./people";
 import SubmitCodeDialog from "./dialogSubmitCode";
+import cookie from "react-cookies";
 
 
 // 传入的参数包括队伍口号，队伍简介，队伍成员list，项目链接,队长信息
