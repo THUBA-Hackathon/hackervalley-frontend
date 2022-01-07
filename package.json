@@ -16,7 +16,9 @@
     "assert": "2.0.0",
     "buffer": "6.0.3",
     "events": "3.3.0",
+    "lib-flexible": "^0.3.2",
     "moment": "^2.29.1",
+    "postcss-px2rem": "^0.3.0",
     "process": "0.11.10",
     "react": "^17.0.2",
     "react-cookies": "^0.1.1",
@@ -51,6 +53,7 @@
     ]
   },
   "devDependencies": {
+    "postcss-pxtorem": "^6.0.0",
     "react-router-dom": "^6.2.1"
   }
 }
