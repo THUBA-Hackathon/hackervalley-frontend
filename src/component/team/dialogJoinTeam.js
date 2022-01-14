@@ -1,4 +1,5 @@
 // 加入队伍，填写个人信息
+import {styled} from "@material-ui/styles";
 import * as React from 'react';
 import Button from '@mui/material/Button';
 import TextField from '@mui/material/TextField';
@@ -9,6 +10,37 @@ import DialogContentText from '@mui/material/DialogContentText';
 import DialogTitle from '@mui/material/DialogTitle';
 import './team.css'
 
+const MyButton = styled(Button)({
+    fontSize: '20px'
+});
+
+const MyTextField = styled(TextField)({
+    // '& label.Mui-focused': {
+    //     color: 'green',
+    // },
+    // '& .MuiInput-underline:after': {
+    //     borderBottomColor: 'green',
+    // },
+    // '& .MuiOutlinedInput-root': {
+    //     '& fieldset': {
+    //         borderColor: 'blue',
+    //     },
+    //     '&:hover fieldset': {
+    //         borderColor: 'red',
+    //     },
+    //     '&.Mui-focused fieldset': {
+    //         borderColor: 'green',
+    //     },
+    // },
+    '& .MuiInputLabel-root': {
+        top: -5,
+        fontSize: 30,
+    },
+    '& .MuiInputBase-input': {
+        fontSize: 20,
+
+    },
+});
 export default function JoinTeamDialog() {
   const [open, setOpen] = React.useState(false);
 
@@ -29,29 +61,28 @@ export default function JoinTeamDialog() {
         <Dialog open={open} onClose={handleClose}>
         <DialogTitle>个人信息</DialogTitle>
         <DialogContent>
-          
-          <TextField
+          <MyTextField
             margin="dense"
             id="name"
             label="昵称"
             fullWidth
             variant="outlined"
           />
-          <TextField
+          <MyTextField
             margin="dense"
             id="area"
             label="来自国家/地区"
             fullWidth
             variant="outlined"
           />
-          <TextField
+          <MyTextField
             margin="dense"
             id="phone"
             label="手机"
             fullWidth
             variant="outlined"
           />
-          <TextField
+          <MyTextField
             margin="dense"
             id="email"
             label="邮箱"
@@ -59,7 +90,7 @@ export default function JoinTeamDialog() {
             fullWidth
             type="email"
           />
-          <TextField
+          <MyTextField
             margin="dense"
             id="role_wanted"
             label="希望担任的角色"
@@ -67,11 +98,11 @@ export default function JoinTeamDialog() {
             variant="outlined"
             multiline
           />
-          
+
         </DialogContent>
         <DialogActions>
-          <Button onClick={handleClose}>取消</Button>
-          <Button onClick={handleClose}>提交</Button>
+          <MyButton onClick={handleClose}>取消</MyButton>
+          <MyButton onClick={handleClose}>提交</MyButton>
         </DialogActions>
       </Dialog>
     </div>

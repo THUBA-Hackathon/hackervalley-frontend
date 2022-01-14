@@ -8,6 +8,13 @@ import Box from '@mui/material/Box';
 import MessageCenter from './messageCenter';
 import AccountInfo from './accountInfo';
 import MineTeam from './mineTeam';
+import { styled } from '@material-ui/styles';
+import  './mine.css'
+
+
+const MyTab = styled(Tab)({
+      fontSize: '20px'
+});
 
 // 我的 页面， 需要传入申请加入队伍信息列表applyMesssageList, 用户信息accountInfoData, 用户所在的队伍列表teamList
 function TabPanel(props) {
@@ -45,6 +52,7 @@ function a11yProps(index) {
 
 export default function MineTabs(props) {
   const [value, setValue] = React.useState(0);
+  //const classes1 = styles();
 
   const handleChange = (event, newValue) => {
     setValue(newValue);
@@ -63,9 +71,9 @@ export default function MineTabs(props) {
         aria-label="Vertical tabs example"
         // sx={{ borderRight: 1, borderColor: 'divider' }}
       >
-        <Tab label="消息中心" {...a11yProps(0)} />
-        <Tab label="帐号信息" {...a11yProps(1)} />
-        <Tab label="我的团队" {...a11yProps(2)} />
+        <MyTab label="消息中心" {...a11yProps(0)} />
+        <MyTab label="帐号信息" {...a11yProps(1)} />
+        <MyTab label="我的团队" {...a11yProps(2)} />
       </Tabs>
       <TabPanel value={value} index={0}>
         <MessageCenter applyMessageList={props.applyMessageList}/>

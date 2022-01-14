@@ -10,7 +10,7 @@ class MineTeam extends React.Component{
             //console.log(dataList)
             return (<div className="team_card_with_join_btn">
                         <TeamCard key={index} {...item} />
-                        
+
                     </div>)
         })
         return(
@@ -20,5 +20,5 @@ class MineTeam extends React.Component{
         )
     }
 }
-  
+
 export default MineTeam;

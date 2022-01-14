@@ -14,12 +14,17 @@ class PageDetails extends React.Component{
             <div>
                 <Nav />
                 <div className="details_line"></div>
-                <img className="hackathon_poster_img" src={this.props.url} alt=""/>
+                <img className="hackathon_poster_img" src={this.props.url} alt="" style={inlineStyles}/>
                 <HackathonDetails url={this.props.url} words={this.props.words} startdate={this.props.startdate} enddate={this.props.enddate}/>
             </div>
+
 
 		);
 	}
 }
+
+const inlineStyles = {
+    width: '100%'
+};
 
 export default PageDetails;

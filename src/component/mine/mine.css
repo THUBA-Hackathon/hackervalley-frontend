@@ -14,6 +14,7 @@
     margin-top: 60px;
     width: 800px;
     height: 476px;
+    left: 150px;
 
     /* $white */
 
@@ -23,10 +24,28 @@
     border-radius: 16px;
 }
 
+.account_info {
+    position: relative;
+    margin-top: 60px;
+    width: 1000px;
+    height: 580px;
+    left: 200px;
+
+    /* $white */
+
+    background: #FFFFFF;
+    border: 1px solid #0057FE;
+    box-sizing: border-box;
+    border-radius: 16px;
+}
+
+.textarea{
+    height: 78px; overflow: hidden;
+}
 .message {
     position: relative;
-    width: 302px;
-    height: 36px;
+    width: 320px;
+    height: 20px;
     margin-left: 42px;
     top: 23px;
 
@@ -43,12 +62,11 @@
 }
 
 .applyer_name {
-
     position: absolute;
     width: 356px;
     height: 32px;
     left: 25px;
-    top:129px;
+    top:100px;
 /*
     background: #F7FAFC; */
     border-radius: 2px;
@@ -59,7 +77,7 @@
     width: 356px;
     height: 32px;
     left: 402px;
-    top:129px;
+    top:100px;
 
     /* background: #F7FAFC; */
     border-radius: 2px;
@@ -70,7 +88,7 @@
     width: 356px;
     height: 32px;
     left: 27px;
-    top:207px;
+    top:200px;
 
     /* background: #F7FAFC; */
     border-radius: 2px;
@@ -81,7 +99,7 @@
     width: 356px;
     height: 32px;
     left: 402px;
-    top:207px;
+    top:200px;
 
     /* background: #F7FAFC; */
     border-radius: 2px;
@@ -92,13 +110,13 @@
     width: 732px;
     height: 32px;
     left: 26px;
-    top:302px;
+    top:300px;
 
     /* background: #F7FAFC; */
     border-radius: 2px;
 }
 
-.accept_btn {
+.accept_btn{
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -106,13 +124,17 @@
 
     position: absolute;
     left: 690px;
-    top: 408px;
+    top: 430px;
     width: 68px;
     height: 36px;
+
 
     /* Brand1-6/常规 */
 
 }
+
+
+
 
 .reject_btn {
     display: flex;
@@ -122,10 +144,9 @@
 
     position: absolute;
     left: 630px;
-    top: 408px;
+    top: 430px;
     width: 68px;
     height: 36px;
-
     /* Brand1-6/常规 */
 
 }

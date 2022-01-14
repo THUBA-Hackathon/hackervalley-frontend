@@ -19,7 +19,7 @@ import MineTabs from './component/mine/mineTab';
 import VerticalTabs from './component/mine/mineTab'
 import PageTeamDetails from './component/team/pageTeamDetails';
 import 'lib-flexible'
-import './rem'
+// import './rem'
 
 
 // let list = [

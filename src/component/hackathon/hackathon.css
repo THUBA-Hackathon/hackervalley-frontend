@@ -87,18 +87,18 @@
 
 .swipper_temp {
     position: absolute;
-    width: 1465px;
+    width: 1630px;
     height: 763px;
-    left: 0px;
+    left: 5px;
     top: 104px;
 }
 
 .phase_on {
-    position: absolute;
+    position: relative;
     width: 63px;
     height: 30px;
     left: 129px;
-    top: 922px;
+    top: 980px;
 
     font-family: DQHT;
     font-style: normal;
@@ -115,7 +115,7 @@
     width: 84px;
     height: 30px;
     left: 283px;
-    top: 922px;
+    top: 980px;
 
     font-family: DQHT;
     font-style: normal;
@@ -129,10 +129,10 @@
 
 .phase_line {
     position: absolute;
-    width: 1437px;
+    width: 98%;
     height: 0px;
-    left: 1px;
-    top: 958px;
+    left: 10px;
+    top: 1020px;
 
     /* Grey/Gray/1 */
 
@@ -144,7 +144,7 @@
     width: 60px;
     height: 0px;
     left: 132px;
-    top: 958px;
+    top: 1020px;
 
     border: 5px solid #06E1FF;
 
@@ -152,9 +152,9 @@
 
 .addh {
     position: absolute;
-    left: 69px;
+    left: 140px;
     width: 1300px;
-    top: 1023px;
+    top: 1050px;
     bottom: 950px;
     height: 127px;
 
@@ -266,9 +266,9 @@
 
 .details_line {
     position: absolute;
-    width: 1465px;
+    width: 98%;
     height: 0px;
-    left: -6px;
+    left: 10px;
     top: 659px;
 
     /* Grey/Gray/1 */

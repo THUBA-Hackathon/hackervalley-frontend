@@ -5,7 +5,7 @@ import './mine.css'
 
 
 class Mine extends React.Component{
-    
+
     render(){
         return(
             <div >
@@ -17,5 +17,5 @@ class Mine extends React.Component{
         )
     }
 }
-  
+
 export default Mine;

@@ -15,7 +15,7 @@ class MessageCenter extends React.Component{
                 {dataList}
             </div>
 		);
-	    
+
     }
 }
 

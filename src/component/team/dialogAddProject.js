@@ -1,4 +1,5 @@
 // 添加项目对话框
+import {styled} from "@material-ui/styles";
 import * as React from 'react';
 import Button from '@mui/material/Button';
 import TextField from '@mui/material/TextField';
@@ -10,6 +11,38 @@ import DialogTitle from '@mui/material/DialogTitle';
 import AddTeam from './newTeam';
 import moment from 'moment'
 import './team.css'
+
+const MyButton = styled(Button)({
+    fontSize: '20px'
+});
+
+const MyTextField = styled(TextField)({
+    // '& label.Mui-focused': {
+    //     color: 'green',
+    // },
+    // '& .MuiInput-underline:after': {
+    //     borderBottomColor: 'green',
+    // },
+    // '& .MuiOutlinedInput-root': {
+    //     '& fieldset': {
+    //         borderColor: 'blue',
+    //     },
+    //     '&:hover fieldset': {
+    //         borderColor: 'red',
+    //     },
+    //     '&.Mui-focused fieldset': {
+    //         borderColor: 'green',
+    //     },
+    // },
+    '& .MuiInputLabel-root': {
+        top: -5,
+        fontSize: 30,
+    },
+    '& .MuiInputBase-input': {
+        fontSize: 20,
+
+    },
+});
 
 export default function AddProjectDialog() {
   const [open, setOpen] = React.useState(false);
@@ -31,22 +64,22 @@ export default function AddProjectDialog() {
         <Dialog open={open} onClose={handleClose}>
         <DialogTitle>项目信息</DialogTitle>
         <DialogContent>
-          
-          <TextField
+
+          <MyTextField
             margin="dense"
             id="name"
             label="队伍名称"
             fullWidth
             variant="outlined"
           />
-          <TextField
+          <MyTextField
             margin="dense"
             id="slogan"
             label="队伍口号"
             fullWidth
             variant="outlined"
           />
-          <TextField
+          <MyTextField
             margin="dense"
             id="intro"
             label="项目介绍"
@@ -54,18 +87,18 @@ export default function AddProjectDialog() {
             variant="outlined"
             multiline
           />
-          <TextField
+          <MyTextField
             margin="dense"
             id="techstack"
             label="所需技术栈"
             variant="outlined"
             fullWidth
           />
-          
+
         </DialogContent>
         <DialogActions>
-          <Button onClick={handleClose}>取消</Button>
-          <Button onClick={handleClose}>提交</Button>
+          <MyButton onClick={handleClose}>取消</MyButton>
+          <MyButton onClick={handleClose}>提交</MyButton>
         </DialogActions>
       </Dialog>
     </div>
